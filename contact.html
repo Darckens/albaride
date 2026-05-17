@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albaride — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">Alb<span>aride</span></a>
+  <ul class="nav-links">
+    <li><a href="itineraires.html" data-page="itineraires.html">Itinéraires</a></li>
+    <li><a href="lieux.html" data-page="lieux.html">Lieux</a></li>
+    <li><a href="activites.html" data-page="activites.html">Activités</a></li>
+    <li><a href="prestations.html" data-page="prestations.html">Prestations</a></li>
+    <li><a href="apropos.html" data-page="apropos.html">À propos</a></li>
+    <li><a href="contact.html" data-page="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-header" style="padding-bottom:1px;">
+    <div class="page-header-inner">
+      <p class="label">Contact</p>
+      <h1>On est là pour <em>répondre à vos questions</em></h1>
+      <p>Que ce soit pour un simple renseignement ou pour construire votre voyage de A à Z, 
+        n'hésitez pas. On répond en général dans la journée, souvent avant.</p>
+    </div>
+  </div>
+
+  <div class="contact-layout">
+    <div class="contact-form-side">
+      <p class="label" style="margin-bottom:20px;">Envoyer un message</p>
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-grp">
+            <label class="form-label">Prénom</label>
+            <input class="form-input" type="text" placeholder="Votre prénom" />
+          </div>
+          <div class="form-grp">
+            <label class="form-label">Nom</label>
+            <input class="form-input" type="text" placeholder="Votre nom" />
+          </div>
+        </div>
+        <div class="form-grp">
+          <label class="form-label">Adresse email</label>
+          <input class="form-input" type="email" placeholder="vous@email.com" />
+        </div>
+        <div class="form-grp">
+          <label class="form-label">Je m'intéresse à</label>
+          <select class="form-select">
+            <option value="">Choisissez une option</option>
+            <option>Un itinéraire sur mesure</option>
+            <option>Un circuit guidé en groupe</option>
+            <option>Le Week-end Express</option>
+            <option>La location de moto</option>
+            <option>Une question générale</option>
+          </select>
+        </div>
+        <div class="form-grp">
+          <label class="form-label">Dates envisagées</label>
+          <input class="form-input" type="text" placeholder="Par exemple : fin juin 2025, 10 jours" />
+        </div>
+        <div class="form-grp">
+          <label class="form-label">Votre message</label>
+          <textarea class="form-textarea" placeholder="Parlez-nous de votre projet, de votre expérience à moto, de ce qui vous attire en Albanie... Plus on en sait, mieux on peut vous aider."></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-dark">Envoyer le message</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-info-side">
+      <h2>Une question ? <em>Écrivez-nous.</em></h2>
+      <p class="lead">On ne passe pas par un call automatisé ou une FAQ interminable. Un message, une réponse d'une vraie personne qui connaît l'Albanie.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">✉</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val">contact@albaride.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Notre base</div>
+            <div class="contact-item-val">Tirana, Albanie</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📅</div>
+          <div>
+            <div class="contact-item-label">Saison de roulage</div>
+            <div class="contact-item-val">Avril à octobre</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div class="contact-item-label">Délai de réponse</div>
+            <div class="contact-item-val">Généralement dans la journée</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800&q=80" alt="Carte" />
+        <div class="contact-map-label">Tirana, Albanie</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Albaride</div>
+  <ul class="footer-links">
+    <li><a href="itineraires.html">Itinéraires</a></li>
+    <li><a href="lieux.html">Lieux</a></li>
+    <li><a href="prestations.html">Prestations</a></li>
+    <li><a href="apropos.html">À propos</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-copy">© 2025 Albaride - Manel BENTAHAR</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

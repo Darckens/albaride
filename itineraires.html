@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albaride — Itinéraires moto en Albanie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">Alb<span>aride</span></a>
+  <ul class="nav-links">
+    <li><a href="itineraires.html" data-page="itineraires.html">Itinéraires</a></li>
+    <li><a href="lieux.html" data-page="lieux.html">Lieux</a></li>
+    <li><a href="activites.html" data-page="activites.html">Activités</a></li>
+    <li><a href="prestations.html" data-page="prestations.html">Prestations</a></li>
+    <li><a href="apropos.html" data-page="apropos.html">À propos</a></li>
+    <li><a href="contact.html" data-page="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+    <div class="page-header-inner">
+      <p class="label">Nos itinéraires thématiques</p>
+      <h1>Chaque route raconte <em>une histoire différente</em></h1>
+      <p>On a parcouru des milliers de kilomètres pour sélectionner les meilleures combinaisons possibles. 
+        Ces itinéraires sont des points de départ, pas des contraintes. On adapte tout selon votre niveau et vos envies.</p>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active">Tous</button>
+      <button class="filter-btn">Nord</button>
+      <button class="filter-btn">Sud</button>
+      <button class="filter-btn">Est</button>
+      <button class="filter-btn">Tour complet</button>
+      <button class="filter-btn">Week-end</button>
+      <button class="filter-btn">Culturel</button>
+    </div>
+  </div>
+
+  <div class="itin-full-grid" id="itin-grid">
+
+    <!-- Nord -->
+    <div class="itin-full-card" data-filtre="nord" onclick="window.location.href='itineraires/alpes-albanaises.html'">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80" alt="Alpes albanaises" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Nord · 8 jours</div>
+          <div class="itin-full-name">Les Alpes albanaises</div>
+          <div class="itin-full-desc">Le grand classique du Nord. Komani, le ferry sur le lac, la montée vers Valbona et le col vers Theth. Une route qui mélange forêts de sapins, crêtes vertigineuses et villages de montagne à l'architecture unique. Exigeant par endroits, inoubliable partout.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">980 km</span>
+          <span class="meta-pill">Intermédiaire</span>
+          <span class="meta-pill">Avril à octobre</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="itin-full-card" data-filtre="nord" onclick="window.location.href='itineraires/shkoder-lac.html'">
+      <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&q=80" alt="Shkodër et le lac" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Nord · 4 jours</div>
+          <div class="itin-full-name">Shkodër et les rives du lac</div>
+          <div class="itin-full-desc">Le plus grand lac des Balkans à la frontière monténégrine, la vieille ville de Shkodër et ses cafés animés, puis la montée vers Koplik. Un circuit plus court, idéal pour un premier aperçu du Nord sans trop s'engager en altitude.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">480 km</span>
+          <span class="meta-pill">Tous niveaux</span>
+          <span class="meta-pill">Avril à novembre</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sud -->
+    <div class="itin-full-card" data-filtre="sud" onclick="window.location.href='itineraires/riviera-ionienne.html'">
+      <img src="https://images.unsplash.com/photo-1544985361-b420d7a77043?w=400&q=80" alt="Riviera ionienne" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Sud · 5 jours</div>
+          <div class="itin-full-name">La Riviera ionienne</div>
+          <div class="itin-full-desc">De Sarandë à Vlorë, la côte albanaise enchaîne les criques cachées, les villages de pêcheurs et les points de vue vertigineux. La SH8 entre Himara et Vlorë compte parmi les plus belles routes côtières d'Europe, et presque personne ne le sait encore.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">620 km</span>
+          <span class="meta-pill">Tous niveaux</span>
+          <span class="meta-pill">Mai à septembre</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="itin-full-card" data-filtre="sud" onclick="window.location.href='itineraires/gjirokastra-permet.html'">
+      <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80" alt="Gjirokastra et Permet" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Sud · 5 jours</div>
+          <div class="itin-full-name">Gjirokastër, Permet et les gorges</div>
+          <div class="itin-full-desc">Un sud plus intérieur, moins connu que la côte mais tout aussi saisissant. Gjirokastër et ses ruelles pavées, les thermes de Bënjë à Permet, les gorges de la Vjosa et le retour par les hauteurs de Leskovik. Un des circuits préférés de nos habitués.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">550 km</span>
+          <span class="meta-pill">Intermédiaire</span>
+          <span class="meta-pill">Avril à octobre</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Est -->
+    <div class="itin-full-card" data-filtre="est" onclick="window.location.href='itineraires/route-des-cols.html'">
+      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&q=80" alt="Route des cols" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Est · 6 jours</div>
+          <div class="itin-full-name">La Route des cols</div>
+          <div class="itin-full-desc">Korçë, la ville la plus européenne d'Albanie, puis le lac d'Ohrid à la frontière macédonienne, les gorges de l'Osumi et le retour par Elbasan. Un itinéraire pour ceux qui veulent voir l'Albanie profonde, loin de tout ce qui ressemble à un circuit touristique.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">730 km</span>
+          <span class="meta-pill">Intermédiaire</span>
+          <span class="meta-pill">Mai à octobre</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="itin-full-card" data-filtre="est" onclick="window.location.href='itineraires/frontieres-est-ohrid.html'">
+      <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80" alt="Macédoine du Nord" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Est · 7 jours</div>
+          <div class="itin-full-name">Frontières de l'Est et lac d'Ohrid</div>
+          <div class="itin-full-desc">Un circuit qui franchit la frontière macédonienne pour rejoindre Ohrid, ville classée par l'UNESCO, avant de revenir en Albanie par Pogradec et le col de Qafë-Thanë. Pour ceux qui aiment l'idée de dépasser les frontières sans perdre le fil de leur voyage.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">810 km</span>
+          <span class="meta-pill">Intermédiaire</span>
+          <span class="meta-pill">Mai à septembre</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tour complet -->
+    <div class="itin-full-card" data-filtre="tour-complet" onclick="window.location.href='itineraires/grand-tour.html'">
+      <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&q=80" alt="Grand Tour" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Tour complet · 14 jours</div>
+          <div class="itin-full-name">Le Grand Tour albanais</div>
+          <div class="itin-full-desc">Pour ceux qui veulent ne rien laisser de côté. Deux semaines, les Alpes du Nord, la côte ionienne, les villes ottomanes, les cols de l'Est. Plus de 2100 kilomètres. Un itinéraire qu'on a mis des années à affiner, et qu'on continue de peaufiner à chaque saison.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">2 100 km</span>
+          <span class="meta-pill">Expérimenté</span>
+          <span class="meta-pill">Juin à septembre</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="itin-full-card" data-filtre="tour-complet" onclick="window.location.href='itineraires/balkans-sud.html'">
+      <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=400&q=80" alt="Tour des Balkans" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Tour complet · 18 jours</div>
+          <div class="itin-full-name">Albanie et Balkans du Sud</div>
+          <div class="itin-full-desc">L'Albanie en intégralité, puis un passage au Monténégro par la côte et en Macédoine du Nord par les lacs. Un grand circuit balkanique pour ceux qui ont le temps et qui ne veulent pas s'arrêter au premier col. Logistique complexe, résultat exceptionnel.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">2 800 km</span>
+          <span class="meta-pill">Expérimenté</span>
+          <span class="meta-pill">Juin à août</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Week-end -->
+    <div class="itin-full-card" data-filtre="week-end" onclick="window.location.href='itineraires/week-end-express.html'">
+      <img src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=400&q=80" alt="Week-end Express" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Week-end · 3 jours</div>
+          <div class="itin-full-name">Week-end Express</div>
+          <div class="itin-full-desc">Tirana le vendredi soir, Berat le samedi, retour par les gorges de l'Osumi le dimanche. Un premier contact avec l'Albanie, court mais dense. Idéal pour tester avant de s'engager sur un voyage plus long. On rentre systématiquement avec l'envie de revenir.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">380 km</span>
+          <span class="meta-pill">Tous niveaux</span>
+          <span class="meta-pill">Toute l'année</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="itin-full-card" data-filtre="week-end" onclick="window.location.href='itineraires/immersion-nord.html'">
+      <img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=400&q=80" alt="Week-end Nord" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Week-end · 3 jours</div>
+          <div class="itin-full-name">Immersion dans le Nord</div>
+          <div class="itin-full-desc">Shkodër le vendredi, le château de Rozafa au lever du soleil, puis la route vers Koplik et le bord du lac. Le samedi, montée vers Theth si les conditions le permettent. Retour le dimanche par la plaine. Un week-end qui donne un avant-goût des Alpes albanaises sans trop s'y aventurer.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">420 km</span>
+          <span class="meta-pill">Intermédiaire</span>
+          <span class="meta-pill">Mai à octobre</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Culturel -->
+    <div class="itin-full-card" data-filtre="culturel" onclick="window.location.href='itineraires/traces-ottomanes.html'">
+      <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&q=80" alt="Patrimoine ottoman" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Culturel · 4 jours</div>
+          <div class="itin-full-name">Sur les traces ottomanes</div>
+          <div class="itin-full-desc">Berat et Gjirokastër, deux villes classées par l'UNESCO que la plupart des gens ne font que traverser en bus. À moto, on prend le temps de se perdre dans les ruelles, de déjeuner chez des gens qui ne parlent que l'albanais, et de trouver des points de vue que les touristes ne connaissent pas.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">450 km</span>
+          <span class="meta-pill">Débutant friendly</span>
+          <span class="meta-pill">Toute l'année</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="itin-full-card" data-filtre="culturel" onclick="window.location.href='itineraires/antiquite-cites.html'">
+      <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80" alt="Apollonie et antiquité" />
+      <div class="itin-full-body">
+        <div>
+          <div class="itin-full-tag">Culturel · 5 jours</div>
+          <div class="itin-full-name">Antiquité et cités perdues</div>
+          <div class="itin-full-desc">Apollonie, l'une des cités grecques les mieux conservées des Balkans, puis Butrint classé au patrimoine mondial, les ruines illyriennes de Byllis et le musée national de Tirana. Un itinéraire pour les curieux qui veulent comprendre pourquoi l'Albanie a une histoire bien plus ancienne qu'on ne l'imagine.</div>
+        </div>
+        <div class="itin-full-meta">
+          <span class="meta-pill">520 km</span>
+          <span class="meta-pill">Tous niveaux</span>
+          <span class="meta-pill">Toute l'année</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Albaride</div>
+  <ul class="footer-links">
+    <li><a href="itineraires.html">Itinéraires</a></li>
+    <li><a href="lieux.html">Lieux</a></li>
+    <li><a href="prestations.html">Prestations</a></li>
+    <li><a href="apropos.html">À propos</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-copy">© 2025 Albaride - Manel BENTAHAR</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
